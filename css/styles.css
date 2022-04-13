@@ -28,7 +28,9 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* outline: 1px solid magenta; */
 }
 
@@ -304,6 +306,127 @@ h2 {
   max-width: 100%;
   height: auto;
 }
+
+/* PORTFOLIO */
+ul {
+  list-style: none;
+}
+
+.our-progects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+h1.progect-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn {
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border: transparent;
+
+  padding: 6px 22px;
+
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.progects {
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.progects > .item {
+  flex-basis: calc(100% / 3 - 30px);
+
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.progect {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  margin: 0px 0px;
+  width: 370px;
+}
+
+.progect-name {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+
+  margin: 0px 0px;
+  width: 370px;
+}
+
+.group-item {
+  background-color: #fff;
+  padding: 20px 24px;
+  width: 370px;
+  height: 110px;
+  border: 1px solid #eeeeee;
+  margin-right: 0;
+}
+.progects img {
+  display: block;
+  height: auto;
+}
+h2.progect{
+  display: inline-block;
+  max-width: 322px;
+  text-align: left;
+}
+
+p.progect-name {
+  display: inline-block;
+  max-width: 322px;
+}
+
+
 
 /*  Footer */
 
