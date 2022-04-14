@@ -15,8 +15,9 @@ background:  #757575; - secondary text color
   --primary-bgc-color: #ffffff;
   --accent-color: #2196f3;
   --accent-bg-color: #2f303a;
-  --third-class-text-color: #FFFFFF;
-  --secondary-bgc:#F5F4FA;
+  --third-class-text-color: #ffffff;
+  --secondary-bgc: #f5f4fa;
+  --social-link-color: #afb1b8;
 }
 
 body {
@@ -37,8 +38,8 @@ body {
 
 /* HEADER */
 
-.portfolio-header{
-border-bottom: 1px solid #ECECEC;
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
 }
 
 .page-head,
@@ -127,8 +128,8 @@ ul {
 
 /* HERO SECTION */
 
-.hero { 
-background-image: linear-gradient(
+.hero {
+  background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -167,7 +168,7 @@ background-image: linear-gradient(
 
 .button:hover,
 .button:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 h1 {
@@ -322,8 +323,9 @@ h2 {
 }
 
 .team-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item img {
@@ -331,6 +333,44 @@ border-radius: 0px 0px 4px 4px;
   max-width: 100%;
   height: auto;
 }
+
+.social-media {
+  display: flex;
+  font-display: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  color: var(--social-link-color);
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+}
+
+.social-link + .social-link {
+  margin-left: 10px;
+}
+
+.social-link:hover {
+  color:var(--third-class-text-color);
+  background-color: var(--accent-color);
+}
+
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  margin: 12px;
+}
+
+
+.social-link:hover .icon-social {
+  fill: currentColor;
+}
+
 
 /* PORTFOLIO */
 ul {
@@ -388,13 +428,14 @@ h1.progect-title {
 .btn:focus {
   background-color: var(--accent-color);
   color: var(--third-class-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .progects {
   margin: 0;
   padding: 0;
-  
+
   display: flex;
   flex-wrap: wrap;
 
@@ -410,7 +451,8 @@ h1.progect-title {
 }
 
 .progects > .item:hover {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .progect {
@@ -446,7 +488,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
   display: block;
   height: auto;
 }
-h2.progect{
+h2.progect {
   display: inline-block;
   max-width: 322px;
   text-align: left;
@@ -456,8 +498,6 @@ p.progect-name {
   display: inline-block;
   max-width: 322px;
 }
-
-
 
 /*  Footer */
 
