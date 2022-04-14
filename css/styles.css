@@ -15,6 +15,8 @@ background:  #757575; - secondary text color
   --primary-bgc-color: #ffffff;
   --accent-color: #2196f3;
   --accent-bg-color: #2f303a;
+  --third-class-text-color: #FFFFFF;
+  --secondary-bgc:#F5F4FA;
 }
 
 body {
@@ -31,10 +33,13 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid magenta; */
 }
 
 /* HEADER */
+
+.portfolio-header{
+border-bottom: 1px solid #ECECEC;
+}
 
 .page-head,
 .site-nav {
@@ -59,7 +64,7 @@ body {
 }
 
 .studio {
-  color: #fff;
+  color: var(--third-class-text-color);
 }
 
 ul {
@@ -122,8 +127,18 @@ ul {
 
 /* HERO SECTION */
 
-.hero {
+.hero { 
+background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgimage.png);
   background-color: var(--accent-bg-color);
+
+  background-repeat: no-repeat;
+  background-size: 1600px;
+  background-position: 50% 50%;
 
   padding: 200px 0px;
   text-align: center;
@@ -132,7 +147,7 @@ ul {
 .button {
   display: inline-block;
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--third-class-text-color);
 
   font-family: inherit;
   font-weight: 700;
@@ -152,12 +167,11 @@ ul {
 
 .button:hover,
 .button:focus {
-  background-color: #fff;
-  color: var(--accent-color);
+  background-color: #188CE8;
 }
 
 h1 {
-  color: #fff;
+  color: var(--third-class-text-color);
 
   width: 696px;
   font-weight: 900;
@@ -216,6 +230,12 @@ h2 {
   margin-bottom: 50px;
 }
 
+.icon-uniq {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
 .uniq {
   position: absolute;
   width: 1px;
@@ -259,7 +279,7 @@ h2 {
 /* TEAM */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgc);
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -295,10 +315,15 @@ h2 {
 }
 
 .team-card {
-  background-color: #fff;
+  background-color: var(--primary-bgc-color);
   width: 270px;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .team-item img {
@@ -341,7 +366,7 @@ h1.progect-title {
 }
 
 .btn {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bgc);
   color: var(--primary-text-color);
 
   font-family: inherit;
@@ -362,7 +387,8 @@ h1.progect-title {
 .btn:hover,
 .btn:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--third-class-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .progects {
@@ -382,6 +408,11 @@ h1.progect-title {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+
+.progects > .item:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .progect {
   font-weight: 700;
   font-size: 18px;
@@ -404,7 +435,7 @@ h1.progect-title {
 }
 
 .group-item {
-  background-color: #fff;
+  background-color: var(--primary-bgc-color);
   padding: 20px 24px;
   width: 370px;
   height: 110px;
@@ -462,7 +493,7 @@ p.progect-name {
 }
 
 .map {
-  color: #fff;
+  color: var(--third-class-text-color);
 }
 .map:hover,
 .map:focus {
