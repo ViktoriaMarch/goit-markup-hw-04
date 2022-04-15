@@ -130,8 +130,8 @@ ul {
 }
 
 .icon-envelope {
-  width: 16px;
-  height: 10px;
+  width: 100%;
+  height: 100%;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -141,10 +141,11 @@ ul {
   height: 12px;
   padding: 0;
   margin-right: 10px;
- fill: currentColor;
+  fill: currentColor;
 }
 
-.contacts-link:hover .icon-envelope {
+.contacts-link:hover .icon-envelope,
+.contacts-link:focus .icon-envelope {
   color: currentColor;
 }
 /* HERO SECTION */
@@ -215,6 +216,13 @@ h1 {
   display: flex;
 }
 
+.uniq-bg {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bgc);
+  margin-bottom: 30px;
+}
+
 h3.uniqenes {
   margin-top: 0;
   margin-bottom: 10px;
@@ -253,9 +261,9 @@ h2 {
 }
 
 .icon-uniq {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
+  margin: 25px 102.34px;
 }
 
 .uniq {
@@ -372,7 +380,8 @@ h2 {
   margin-left: 10px;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   color: var(--third-class-text-color);
   background-color: var(--accent-color);
 }
@@ -384,7 +393,8 @@ h2 {
   margin: 12px;
 }
 
-.social-link:hover .icon-social {
+.social-link:hover .icon-social,
+.social-link:focus .icon-social {
   fill: currentColor;
 }
 
@@ -406,20 +416,29 @@ ul.clients-list {
 .clients-link {
   color: var(--social-link-color);
   display: flex;
+  border: 1px solid var(--social-link-color);
+  width: 170px;
+  height: 92px;
 }
 
 .icon-clients {
   width: 170px;
   height: 92px;
   fill: currentColor;
-  border: 1px solid currentColor;
+  /* margin: 16px 32px; */
 }
 
-.clients-link:hover .icon-clients {
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
   color: var(--accent-color);
 }
-
 /* PORTFOLIO */
+
 ul {
   list-style: none;
 }
@@ -630,6 +649,7 @@ p.progect-name {
   margin: 12px;
 }
 
-.social-link-footer:hover {
+.social-link-footer:hover,
+.social-link-footer:focus {
   background-color: var(--accent-color);
 }
